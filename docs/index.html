@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>小肥咪 · macOS 桌面陪伴小猫</title>
-    <link rel="icon" type="image/png" href="./icon.png" />
-    <link rel="apple-touch-icon" href="./icon.png" />
+    <link rel="icon" type="image/png" href="./icon.png?v=2" />
+    <link rel="apple-touch-icon" href="./icon.png?v=2" />
     <style>
       :root {
         --bg: #f5f5f7;
@@ -60,18 +60,18 @@
       .app-icon-wrap {
         display: flex;
         justify-content: center;
-        margin-bottom: 16px;
+        margin-bottom: 18px;
       }
       .app-icon {
-        width: 96px;
-        height: 96px;
-        border-radius: 22px;
-        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16), 0 2px 6px rgba(0, 0, 0, 0.08);
-        object-fit: cover;
+        width: 144px;
+        height: 144px;
+        display: block;
+        background: transparent;
+        filter: drop-shadow(0 12px 24px rgba(0, 122, 255, 0.22)) drop-shadow(0 3px 8px rgba(0, 0, 0, 0.10));
         transition: transform 0.22s cubic-bezier(0.22, 1, 0.36, 1);
       }
       .app-icon:hover {
-        transform: translateY(-3px) scale(1.04);
+        transform: translateY(-4px) scale(1.04);
       }
       .badge {
         display: inline-flex;
@@ -222,7 +222,7 @@
     <main class="wrap">
       <section class="hero">
         <div class="app-icon-wrap">
-          <img class="app-icon" src="./icon.png" alt="小肥咪 App 图标" width="96" height="96" />
+          <img class="app-icon" src="./icon.png?v=2" alt="小肥咪 App 图标" width="144" height="144" />
         </div>
         <div class="badge" id="ver-badge">🐱 macOS Apple Silicon · 最新版本加载中...</div>
         <h1>小肥咪 (XiaoFeiMi)</h1>
